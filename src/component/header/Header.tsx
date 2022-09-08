@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import style from "./header.module.scss";
 
 function Header() {
@@ -6,9 +7,9 @@ function Header() {
       <header>
         <div className={`${style.header}`}>
           <div className="logo">
-            <a href="/">
+            <Link to='/'>
               <img src="/image/logo.png" alt="logo" width={140} />
-            </a>
+            </Link>
           </div>
           <div className="rightHeader">
             <div className="cart">
@@ -21,7 +22,7 @@ function Header() {
                 <a href="/">Login</a>
               </div>
               <div className="register">
-                <a href="/">Register</a>
+                <Link to='register'>Register</Link>
               </div>
             </div>
           </div>
